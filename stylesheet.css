@@ -114,7 +114,7 @@ ul .active:hover:before {
     font-size: 20px;
     padding: 10px 20px;
     border: 2px solid #a43333;
-    border-radius: 0px 0px 16px 16px;
+    border-radius: 16px 16px 16px 16px;
     color: #fce7b7;
     background: #202028;
 }
