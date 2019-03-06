@@ -1,0 +1,120 @@
+body {
+    padding: 0;
+    margin: 0;
+    /*display: flex;*/
+    /*align-items: center;*/
+    justify-content: center;
+    height: 100vh;
+    background: #202028;
+    color: #fce7b7;
+    transition: .5s;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+section {
+    border: 8px dashed #a43333;
+}
+
+h1, h2 {
+    display: flex;
+    justify-content: center;
+    color: #fce7b7;
+}
+
+/*aside {
+    float: right;
+    margin-right: 32px;
+    /*padding: 16px;
+    border: 8px solid #a43333;
+    border-radius: 32px; *
+}*/
+
+.anotherclass {
+    border: 8px dashed #a43333;
+}
+
+.someclass {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fce7b7;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navthing {
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    font-size: 18px;
+    margin-left: 8px;
+    margin-right: 16px;
+    font-weight: bold;
+}
+
+a.navthing:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    top: -5px;
+    left: -5px;
+    transform: scale(0);
+    background: #a43333;
+    z-index: -1;
+    border-radius: 10px;
+}
+
+a.navthing:hover:before {
+    opacity: 1;
+    transition: 0.5s transform cubic-bezier(0,.44,.3,1.47);
+    transform: scale(1);
+}
+
+ul .active {
+    color: #a43333;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    font-size: 18px;
+    margin-left: 8px;
+    margin-right: 16px;
+    font-weight: bold;
+}
+
+ul .active:hover:before {
+    opacity: 0;
+}
+
+.wrap_title {
+    border-radius: 30px 30px 8px 8px;
+    text-align: center;
+    background: #a43333;
+    color: #fce7b7;
+    font-weight: bold;
+    font-size: 32px;
+}
+.wrap-text {
+    font-size: 20px;
+    padding: 10px 20px;
+    border: 2px solid #a43333;
+    border-radius: 0px 0px 16px 16px;
+    color: #fce7b7;
+    background: #202028;
+}
