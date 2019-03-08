@@ -96,24 +96,19 @@ a.navthing:hover:before {
 
 p a:hover {
     transition: 0.5s;
-    transition-timing-function: cubic-bezier(0,1.44,.3,1.47);
-    background: #a43333;
+    transition-timing-function: color cubic-bezier(0,1.44,.3,1.47);
+    color: #a43333;
+    /*background: #a43333;
     transform: scale(1);
     width: 100%;
     height: 100%;
     padding: 5px;
     top: -5px;
     left: -5px;
-    border-radius: 10px;
+    border-radius: 10px;*/
     
 }
 
-.hidden {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-decoration: none;
-    font-size: 5px;
-    color: #202028;
-}
 /*p a:before {
     content: "";
     position: absolute;
@@ -161,7 +156,7 @@ ul .active:hover:before {
 .wrap-text {
     font-size: 24px;
     text-align: center;
-    padding: 10px 20px 0px;
+    padding: 10px 20px;
     border: 2px solid #a43333;
     border-radius: 16px 16px 16px 16px;
     color: #fce7b7;
