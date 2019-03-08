@@ -162,3 +162,8 @@ ul .active:hover:before {
     color: #fce7b7;
     background: #202028;
 }
+
+.link {
+    color: #a43333;
+    text-decoration: underline;
+}
