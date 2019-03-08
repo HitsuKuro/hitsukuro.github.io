@@ -12,9 +12,9 @@ body {
     font-size: 24px
 }
 
-section {
+/*section {
     border: 8px dashed #a43333;
-}
+}*/
 
 h1, h2 {
     display: flex;
@@ -37,6 +37,7 @@ h1, h2 {
     padding-right: 16px;
     justify-content: center;
     text-align: center;
+    border-radius: 100px;
 }
 
 .someclass {
@@ -94,40 +95,9 @@ a.navthing:hover:before {
     transform: scale(1);
 }
 
-p a:hover {
+/*p a:hover {
     transition: 0.5s;
-    transition-timing-function: color cubic-bezier(0,1.44,.3,1.47);
     color: #a43333;
-    /*background: #a43333;
-    transform: scale(1);
-    width: 100%;
-    height: 100%;
-    padding: 5px;
-    top: -5px;
-    left: -5px;
-    border-radius: 10px;*/
-    
-}
-
-/*p a:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    padding: 5px;
-    top: -5px;
-    left: -5px;
-    transform: scale(0);
-    background: #a43333;
-    z-index: -1;
-    border-radius: 10px;
-    opacity: 0;
-}
-
-p a:hover:before {
-    opacity: 1;
-    transition: 0.5s transform cubic-bezier(0,.44,.3,1.47);
-    transform: scale(1);
 }*/
 
 ul .active {
@@ -145,6 +115,12 @@ ul .active:hover:before {
     opacity: 0;
 }
 
+.red:hover {
+/*    filter: invert(31%) sepia(7%) saturate(4425%) hue-rotate(314deg) brightness(105%) contrast(112%);*/
+    filter: grayscale(100%) brightness(25%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
+    transition: 0.5s;
+}
+
 .wrap_title {
     border-radius: 30px 30px 8px 8px;
     text-align: center;
@@ -153,6 +129,7 @@ ul .active:hover:before {
     font-weight: bold;
     font-size: 38px;
 }
+
 .wrap-text {
     font-size: 24px;
     text-align: center;
