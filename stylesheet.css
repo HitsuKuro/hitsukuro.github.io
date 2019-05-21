@@ -9,12 +9,14 @@ body {
     color: #fce7b7;
     transition: .5s;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 24px
+    font-size: 24px;
 }
 
-/*section {
-    border: 8px dashed #a43333;
-}*/
+.testing {
+    width: 1000px;
+    background: #202028;
+    margin: 0px auto;
+}
 
 h1, h2 {
     display: flex;
@@ -22,28 +24,116 @@ h1, h2 {
     color: #fce7b7;
 }
 
-/*aside {
-    float: right;
-    margin-right: 32px;
-    /*padding: 16px;
-    border: 8px solid #a43333;
-    border-radius: 32px; *
-}*/
+#links {
+    align-items: center;
+    display: flex;
+    margin: 0px auto;
+    justify-content: center;
+    width: 601px;
+}
+
+.left {
+    text-align: right;
+    width: 300px;
+    margin: 0px 16px;
+}
+.right {
+    text-align: left;
+    width: 300px;
+    margin: 0px 16px;
+}
 
 .anotherclass {
-    border: 8px dashed #a43333;
+    border-bottom: 8px solid #a43333;
+    border-top: 8px solid #a43333;
     margin: 16px;
     padding-left: 16px;
     padding-right: 16px;
+    padding-bottom: 16px;
+    width: 950px;
     justify-content: center;
     text-align: center;
-    border-radius: 0px;
+    /*border-radius: 100px; dashed /*60px double */
 }
 
 .someclass {
     justify-content: center;
     align-items: center;
     display: flex;
+}
+
+.staffwrap {
+    border-radius: 64px;
+    text-align: center;
+    background: #a43333; /*klassen oder ids für versch farben*/
+    color: #fce7b7;
+    font-weight: bold;
+    font-size: 38px;
+    width: 500px;
+    margin: 16px;
+}
+.staffred {
+    border: 4px solid #a43333;
+}
+.stafforange {
+    border: 4px solid #a43333;
+}
+.staffwrap.orange {
+    background: #c85918;
+}
+.stafforange {
+    border: 4px solid #c85918;
+}
+.staffwrap.purple {
+    background: #843da4;
+}
+.staffpurple {
+    border: 4px solid #843da4;
+}
+.staffwrap.blue {
+    background: #0062d2;
+}
+.staffblue {
+    border: 4px solid #0062d2;
+}
+.staffwrap.green {
+    background: #08c73e;
+}
+.staffgreen {
+    border: 4px solid #08c73e;
+}
+
+.staff {
+    justify-content: center;
+    /*display: flex;
+    align-items: center;*/
+    padding: 20px 0px 20px 20px;
+    /*border: 4px solid #a43333;*/
+    border-radius: 64px;
+    background: #202028;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.centered {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.staff2 {
+    padding: 0px 8px;
+}
+
+.stafflist {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.img {
+    border-radius: 16px;
+    float: left;
 }
 
 .menu {
@@ -143,4 +233,58 @@ ul .active:hover:before {
 .link {
     color: #a43333;
     text-decoration: underline;
+}
+
+.hero-logo-circles {
+    width: 444px;
+    height: 444px;
+    border-radius: 16px;
+    float: left;
+    position: relative;
+}
+.hero-logo-peeter {
+    position: absolute;
+}
+.hero-logo-text {
+    position: absolute;
+    left:0;
+    top:0;
+    animation: hero-logo-text 4s linear infinite;
+}
+.hero-logo-circle {
+    position:absolute;
+    left:0;
+    top:0;
+    animation:hero-logo-circle 1s linear infinite;
+    will-change:transform;
+}
+.hero-logo-circle:nth-child(1) {
+    animation-duration:30s;
+}
+.hero-logo-circle:nth-child(2) {
+    animation-duration:40s;
+}
+.hero-logo-circle:nth-child(3) {
+    animation-duration:50s;
+}
+.hero-logo-circle:nth-child(4) {
+    animation-duration:60s;
+}
+
+@keyframes hero-logo-circle {
+    100% { transform:rotate(1turn)}
+}
+
+@keyframes hero-logo-text {
+    0% {top:-30px; left:0px}
+    4% {top:-29px; left:0px}
+    6% {top:-28px; left:0px}
+    44% {top:2px; left:0px}
+    46% {top:3px; left:0px}
+    50% {top:4px; left:0px}
+    54% {top:3px; left:0px}
+    56% {top:2px; left:0px}
+    94% {top:-28px; left:0px}
+    96% {top:-29px; left:0px}
+    100% {top:-30px; left:0px}
 }
